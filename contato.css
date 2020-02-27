@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+header ul {
+    list-style: none;
+    text-align: right;
+    position: relative;
+    right: 50px;
+    top: 8px;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+.header-borda {
+    padding: 6px;
+    background-color: rgb(172, 31, 65);
+}
+
+.img-form {
+   /* background-image: linear-gradient(to top, transparent 5%, white 85%), url('images/fundo_pag1.jpeg');*/
+    background-image: linear-gradient(to top, transparent 1%, white 100%), url('images/fundo_pag1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    display: inline-block;
+}
+
+.container-form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2% 2%;
+}
+
+.img-form .container-form input{
+    margin: 30px 0;
+}
+
+
+.img-form h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.img-form input[type=text] {
+    display: block;
+    width: 70%;
+    height: 35px;
+    font-weight: 400;
+    border: 0;
+    padding-left: 8px;
+}
+
+.img-form textarea {
+    resize: none;
+    width: 70%;
+    height: 100px;
+    margin-top: 20px;
+    padding-left: 8px;
+    padding-top: 5px;
+    border: 0;
+}
+
+.img-form .container-form p {
+    position: relative;
+    top: 20px; 
+}
+
+.img-form .container-form span:nth-of-type(1) {
+    font-weight: bold;
+    position: relative;
+    top: 15px;
+}
+
+.img-toldo {
+    background-image: url('images/toldo_vermelho.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 750px;
+   
+    float: right;
+}
+
+.img-form .container-form input[type=submit] {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(93, 178, 219);
+    border: 0;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.borda-baixo {
+    width: 100%;
+    height: 45px;
+    background-color: rgb(102, 102, 102);
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+section .rede-social-img {
+    background-image: url('images/toldos_contato.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35%;
+    height: 500px;
+    margin-top: 20px;
+    display: inline-block;
+    
+}
+
+section .rede-social-contato {
+    float: right;
+}
+
+section .rede-social-contato h2 {
+    text-transform: uppercase;
+    color: #b4b4b4;
+    font-size: 22px;
+    text-align: right;
+    padding-top: 80px;
+    margin-left: 50px;
+    max-width: 450px;
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 20px;
+}
+
+section .linha {
+    height: 450px;
+    border-right: 3px solid #ccc;
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+section .rede-social-contato ul li{
+    list-style-type: none;
+    color: #3b5998;
+    cursor: pointer;
+    margin: 50px 90px;
+}
+
+section .sessao-final {
+    background-image: url('images/toldo_vermelho.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    width: 100%;
+    height: 850px;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    section .sessao-final {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .img-toldo {
+        display: none;
+    }
+    .img-form {
+        width: 100%;
+        height: 600px;
+        background-position: center;
+    }
+    .img-form .container-form input{
+        margin: 15px 0;
+    }
+    .img-form input[type=text] {
+        width: 60%;
+        height: 25px;
+        padding-left: 8px;
+    }
+    
+    .img-form textarea {
+        width: 60%;
+        height: 80px;
+        margin-top: 15px;
+    }
+    
+    .img-form .container-form p {
+        position: relative;
+        top: 8px; 
+    }
+    
+    .img-form .container-form span:nth-of-type(1) {
+        font-weight: bold;
+        position: relative;
+        top: 10px;
+    }
+    section .rede-social-contato h2 {
+        font-size: 18px;
+        text-align: right;
+        padding-top: 60px;
+        width: 80%;
+        border-bottom: 3px solid #ccc;
+        padding-bottom: 10px;
+        
+    }
+    .w40 {
+        width: 100%;
+    }
+    
+    .w60 {
+        width: 100%;
+    }
+    section .rede-social-img {
+        background-image: url('images/toldos_contato.jpeg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 550px;
+        margin-top: 20px;
+        float: none;
+   
+    }
+    
+    section .linha {
+        display: none;
+    }
+    section .rede-social-contato ul li{
+        list-style-type: none;
+        color: #3b5998;
+        cursor: pointer;
+        margin: 30px 5px;
+        float: left; 
+        width: 100%;
+    }
+
+    section .sessao-final  {
+        display: none;
+    }
+}

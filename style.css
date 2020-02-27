@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear {
+    clear: both;
+}
+
+header .img-fundo {
+    background-image: url('images/fundo_pag1.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+}
+
+.img1-fundo {
+    background-image: url('images/toldos_pag1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 3500px;
+    height: 800px;
+    max-width: 350px;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.mobile {
+    display: none;
+}
+
+.navegacao ul li {
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    margin-top: 25px;
+}
+
+.navegacao ul li a{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: lighter;
+    position: relative;
+    top: 45px;
+}
+.navegacao ul li span{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    top: 42px;
+}
+
+.navegacao ul li i {
+    position: relative;
+    top: 38px;
+    right: 5px;
+}
+
+.borda-baixo {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 50px;
+}
+
+.borda-baixo1 {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 740px;
+    
+}
+
+hr {
+    height: 3px;
+    position: relative;
+    top: 3px;
+    background-color: #b4b4b4
+}
+
+.w50  {
+    width: 50%;
+    float: left;
+    padding: 0 80px;
+}
+
+section.interacao {
+    padding: 80px 0;
+}
+
+section .interacao1 h2 {
+    font-size: 26px;
+    color: #b4b4b4;
+    padding: 10px 0;
+    border-bottom: 3px solid #ccc;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .interacao2 p {
+    font-size: 14px;
+    color: black;
+    text-align: right;
+    color: rgb(145, 135, 135);
+}
+
+.borda1-cinza {
+    height: 50px;
+    background-color: rgb(127, 127, 127);
+}
+
+.img-telhas {
+    background-image: linear-gradient(to bottom, transparent 50%, #fff 96%), url('images/telhas_vermelhas.jpeg');  
+    height: 800px;
+    width: 35%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.telhas-vermelhas{
+    position: relative;
+    left: 50px;
+ }
+ 
+ .texto-telhas h2 {
+     font-size: 26px;
+     padding: 10px 0;
+     color: #b4b4b4;
+     border-bottom: 3px solid #ccc;
+     text-align: center;
+     text-transform: uppercase;
+     position: relative;
+     top: 50px;
+     left: 180px;
+     text-align: center;
+ }
+ 
+ .texto-telhas p {
+     padding: 12px 0;
+     position: relative;
+     top: 50px;
+     left: 180px;
+     text-align: left;
+     font-size: 14px;
+     color: rgb(145, 135, 135);
+}
+
+.sobre-background {
+    background-color: rgb(188, 188, 188);
+    height: 300px;
+}
+
+.sobre  h2 {
+    font-size: 26px;
+    padding: 50px 0 10px 0px;
+    color: rgb(46, 51, 47);
+    border-bottom: 3px solid rgb(220, 220, 220);
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.sobre p {
+    font-size: 12px;
+    color: rgb(46, 51, 47);
+    text-align: left;
+    padding-top: 20px;
+}
+
+.img-sobre {
+    background-image: url('images/logomarca.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    
+}
+
+.black-footer {
+    background-color: black;
+    height: 200px;
+}
+
+footer h2 {
+    font-size: 26px;
+    padding: 50px 0 10px 0px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+footer h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+footer h1 a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+    padding: 12px 35px;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 30px;
+    float: right;
+    position: relative;
+    top: 65px;
+    right: 15px;
+    display: none;
+    z-index: 99;
+}
+
+@media screen and (max-width: 768px) {
+    .img-fundo {
+        max-height: 600px;
+    }
+
+    .borda-baixo1 {
+        position: absolute;
+        top: 540px;
+    }
+    
+    .img-contato1 img {
+        position: relative;
+        left: 0;
+        top: 0;
+        
+    }
+    
+    .img1-fundo {
+        position: absolute;
+        background-size: contain;
+        max-width: 400px;
+        height: 600px;
+        z-index: 1;
+        overflow: hidden;
+    }
+    
+    .w50 {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    section .interacao1 h2 {
+        font-size: 20px;
+
+    }
+    section .interacao1 p {
+        font-size: 12px;
+
+    }
+
+    .img-telhas {
+        background-image: linear-gradient(to bottom, transparent 50%, #fff 96%), url('images/telhas_vermelhas.jpeg');  
+        height: 500px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .texto-telhas h2 {
+        font-size: 20px;
+        position: relative;
+        left: 0;
+        top: 0;
+        padding: 20px 0;
+    }
+
+    .texto-telhas p {
+        font-size: 12px;
+        position: relative;
+        left: 0;
+        top: 0;   
+        padding: 20px 0;
+    }
+
+    .img-sobre {
+        display: none;
+    }
+
+    .sobre  h2 {
+        font-size: 20px;
+    }
+    
+
+    footer h2 {
+        font-size: 22px;
+     
+    }
+    
+    footer h1 a {
+        font-size: 20px;
+    }
+
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: none;
+        position: relative;
+        top: 60px;
+        z-index: 9;
+    }
+
+    .fa-bars {
+        display: block;
+        cursor: pointer;
+        z-index: 99;
+    }
+
+    .mobile ul {
+        padding-top: 25px;        
+    }
+
+    .mobile ul li {
+        float: none;
+        text-align: center;
+        background-color: white;
+        border-bottom: 1px solid #b4b4b4;
+        padding: 20px 0;
+        margin-top: 0;
+    }
+   
+    .mobile ul li span {
+        color: #333333;
+        background-color: white;
+    }
+
+    .mobile ul li a{
+        background-color: white;
+        margin: 0 20px;
+        position: relative;
+        top: 0px;
+        font-weight: bold;
+        color: #333333;
+    }
+}
